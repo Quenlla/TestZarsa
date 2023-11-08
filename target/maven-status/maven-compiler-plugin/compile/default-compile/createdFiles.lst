@@ -1,0 +1,9 @@
+manuel\araujo\rest\ApplicationRest.class
+manuel\araujo\repository\PricesRepository.class
+manuel\araujo\config\SpringFoxConfig.class
+manuel\araujo\repository\PricesCustomRepositoryImpl.class
+manuel\araujo\data\Prices.class
+manuel\araujo\Main.class
+manuel\araujo\repository\PricesCustomRepository.class
+manuel\araujo\service\PricesServiceImpl.class
+manuel\araujo\service\PricesService.class

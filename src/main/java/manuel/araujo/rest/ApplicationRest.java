@@ -23,22 +23,9 @@ public class ApplicationRest {
     public ApplicationRest(PricesService pricesService){
         this.pricesService=pricesService;
     }
-    @GetMapping("/getListaProductos")
-    public ResponseEntity<List<Prices>> getListaProductos(
-            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) @RequestParam(name = "fechaAplicacion", required = true) LocalDateTime applicationDate,
-            @RequestParam(name = "idProducto", required = true) int idProducto,
-            @RequestParam(name = "idCadena", required = true) int idCadena
-    )
-    {
-        List<Prices> response = pricesService.getProducto(applicationDate,idProducto,idCadena);
-        if(response==null||response.size()==0){
-            return ResponseEntity.notFound().build();
-        }else{
-            return ResponseEntity.ok(response);
-        }
-    }
-    @GetMapping("/getProducto")
-    public ResponseEntity<Prices> getProducto(
+
+    @GetMapping("/getPrice")
+    public ResponseEntity<Prices> getPrice(
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) @RequestParam(name = "fechaAplicacion", required = true) LocalDateTime applicationDate,
             @RequestParam(name = "idProducto", required = true) int idProducto,
             @RequestParam(name = "idCadena", required = true) int idCadena

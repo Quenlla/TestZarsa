@@ -11,12 +11,14 @@
 
 	<groupId>manuel.araujo</groupId>
 	<artifactId>TestZarsa</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>TestZarsa</name>
-	<description>TestFromIndra</description>
+	<packaging>jar</packaging>
+	<description>TestForIndra</description>
+	
 	<properties>
 		<spring.boot.mainclass>manuel.araujo.Main</spring.boot.mainclass>
-		<java.version>11</java.version>
+		<java.version>11</java.version>		
 	</properties>
 	<dependencies>
 		<dependency>
