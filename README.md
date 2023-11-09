@@ -13,7 +13,9 @@ Open a terminal and go to the directory where you unzipped the package, where th
 To run the project:
   ->Execute mvn clean package to build the project, this regenerates the .jar in /target
   ->In case that you don't have maven installed, there is a .jar already created, to run it go to /target and execute  java -jar .\TestZarsa-1.0.0.jar
-
+  ->This app runs on port 8080, if you have your 8080 port already in use you can download the 'port8090' branch version or kill the process running on 8080
+  by doing this you should change the swagger url to http://localhost:8090/Test-Zarsa/swagger-ui/#/application-rest
+  
   Once the application is running, go to http://localhost:8080/Test-Zarsa/swagger-ui/#/application-rest
   there you can try the endpoint to query the following table:
   
