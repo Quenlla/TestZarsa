@@ -28,7 +28,7 @@ class MainTests {
 				"idCadena		=>1 (Zara) \n" +
 				"idProducto		=>35455");
 		Prices response = this.rest.getForEntity(
-				"http://localhost:8080/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-14T10:00:00&idCadena=1&idProducto=35455",
+				"http://localhost:8090/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-14T10:00:00&idCadena=1&idProducto=35455",
 				Prices.class).getBody();
 		assertThat(response.getPrice()).isEqualTo(35.50);
 		System.out.println("got final price: " +response.getPrice() + " " +response.getCurr());
@@ -41,7 +41,7 @@ class MainTests {
 				"idCadena		=>1 (Zara) \n" +
 				"idProducto		=>35455");
 		Prices response = this.rest.getForEntity(
-				"http://localhost:8080/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-14T16:00:00&idCadena=1&idProducto=35455",
+				"http://localhost:8090/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-14T16:00:00&idCadena=1&idProducto=35455",
 				Prices.class).getBody();
 		assertThat(response.getPrice()).isEqualTo(25.45);
 		System.out.println("got final price: " +response.getPrice() + " " + response.getCurr());
@@ -54,7 +54,7 @@ class MainTests {
 				"idCadena		=>1 (Zara) \n" +
 				"idProducto		=>35455");
 		Prices response = this.rest.getForEntity(
-				"http://localhost:8080/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-14T21:00:00&idCadena=1&idProducto=35455",
+				"http://localhost:8090/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-14T21:00:00&idCadena=1&idProducto=35455",
 				Prices.class).getBody();
 		assertThat(response.getPrice()).isEqualTo(35.50);
 		System.out.println("got final price: " +response.getPrice() + " " + response.getCurr());
@@ -67,7 +67,7 @@ class MainTests {
 				"idCadena		=>1 (Zara) \n" +
 				"idProducto		=>35455");
 		Prices response = this.rest.getForEntity(
-				"http://localhost:8080/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-15T10:00:00&idCadena=1&idProducto=35455",
+				"http://localhost:8090/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-15T10:00:00&idCadena=1&idProducto=35455",
 				Prices.class).getBody();
 		assertThat(response.getPrice()).isEqualTo(30.50);
 		System.out.println("got final price: " +response.getPrice() + " " + response.getCurr());
@@ -80,7 +80,7 @@ class MainTests {
 				"idCadena		=>1 (Zara) \n" +
 				"idProducto		=>35455");
 		Prices response = this.rest.getForEntity(
-				"http://localhost:8080/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-16T21:00:00&idCadena=1&idProducto=35455",
+				"http://localhost:8090/Test-Zarsa/Prices/getPrice?fechaAplicacion=2020-06-16T21:00:00&idCadena=1&idProducto=35455",
 				Prices.class).getBody();
 		assertThat(response.getPrice()).isEqualTo(38.95);
 		System.out.println("got final price: " +response.getPrice() + " " + response.getCurr());
